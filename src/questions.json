@@ -1,0 +1,162 @@
+{
+  "Questions": [
+    {
+      "question": "Which is the most popular Javascript framework?", 
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?", 
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+
+    {
+      "question": "What's the fundamental building block of React apps?", 
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What's the name of the syntax we use to describe the UI in React components?", 
+      "options": ["FBJ", "Babel", "Jsx", "Es2015"],
+      "correctOption": 2,
+      "points": 10
+    },
+
+    {
+      "question": "Which company invented React?", 
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+
+    {
+      "question": "How does data flow naturally in React apps?", 
+      "options": ["From parents to children", "From children to paarents", "Both ways", "The developer decides"],
+      "correctOption": 0,
+      "points": 10
+    },
+
+    {
+      "question": "How to pass data into a child component?", 
+      "options": ["State", "Props", "propTypes", "Parameters"],
+      "correctOption": 1,
+      "points": 10
+    },
+
+    
+      {
+        "question": "What hook is used to manage state in a functional component?",
+        "options": ["useFetch", "useState", "useReducer", "useEffect"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What does the useEffect hook primarily handle?",
+        "options": ["State updates", "Side effects", "Event handling", "Data binding"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "What is the correct way to pass props in React?",
+        "options": ["<Component prop='value' />", "<Component {prop: value} />", "<Component.prop=value />", "<Component>prop: value</Component>"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What must a React component return?",
+        "options": ["A number", "A string", "JSX or null", "An array"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is JSX?",
+        "options": ["JavaScript XML", "Java Syntax Extension", "Just Syntax Xpress", "JavaScript Extra"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "How many parent elements can a JSX element return?",
+        "options": ["Any number", "Only one", "Zero", "Depends on the component"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "Which method is used to render React elements to the DOM?",
+        "options": ["React.mount()", "ReactDOM.render()", "React.render()", "React.attach()"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "Which hook is best for fetching data in a component?",
+        "options": ["useData", "useEffect", "useFetch", "useAPI"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "Which company created React?",
+        "options": ["Google", "Microsoft", "Facebook", "Amazon"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What is the purpose of keys in a list in React?",
+        "options": ["To sort the list", "To provide a unique identity", "To encrypt data", "To style the list"],
+        "correctOption": 1,
+        "points": 10
+      },
+      {
+        "question": "How do you lift state up in React?",
+        "options": ["Using Redux", "Passing props down", "Moving state to the closest common ancestor", "Using useContext"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does 'lifting state up' mean?",
+        "options": ["Making state global", "Creating more states", "Moving state to a parent component", "Sharing state across projects"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "What does useReducer help you manage?",
+        "options": ["Complex state logic", "Side effects", "DOM updates", "Props changes"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What is the virtual DOM?",
+        "options": ["The DOM in memory", "The main browser DOM", "A new browser", "A debugging tool"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "Which one is NOT a valid React hook?",
+        "options": ["useState", "useRef", "useClass", "useEffect"],
+        "correctOption": 2,
+        "points": 10
+      },
+      {
+        "question": "Which prop is used to give a component content between its tags?",
+        "options": ["children", "content", "value", "data"],
+        "correctOption": 0,
+        "points": 10
+      },
+      {
+        "question": "What’s the best way to style components in React?",
+        "options": ["Inline styles", "CSS Modules", "Styled-components", "All of the above"],
+        "correctOption": 3,
+        "points": 10
+      },
+      {
+        "question": "What does React.Fragment let you do?",
+        "options": ["Add side effects", "Group multiple elements without extra nodes", "Add styles", "Handle async operations"],
+        "correctOption": 1,
+        "points": 10
+      }
+    ]
+    
+  
+}
