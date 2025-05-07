@@ -41,7 +41,7 @@ responsive design.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/react-quiz-app.git
+git clone https://github.com/Miss-Marvis/react-quiz
 
 # Navigate into the project folder
 cd react-quiz-app
@@ -55,4 +55,4 @@ npm run dev
 
 🌐 Live Demo
 
-🚀 Live on Netlify: https://bills-with-buddies.netlify.app/
+🚀 Live on Netlify:https://questions-answe.netlify.app/

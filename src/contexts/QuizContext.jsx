@@ -92,7 +92,6 @@ function QuizProvider({ children }) {
 			.catch((err) => dispatch({ type: 'dataFailed' }))
 	}, [])
 
-	// Value object to be provided to consumers
 	const value = {
 		Questions,
 		status,
@@ -109,7 +108,6 @@ function QuizProvider({ children }) {
 	return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>
 }
 
-// Custom hook to use the quiz context
 function useQuiz() {
 	const context = useContext(QuizContext)
 	if (context === undefined) {
