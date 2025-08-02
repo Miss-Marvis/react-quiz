@@ -49,6 +49,9 @@ cd react-quiz-app
 # Install dependencies
 npm install
 
+#To run Json data
+npm run "json-server"
+
 # Start development server
 npm run dev
 ```
