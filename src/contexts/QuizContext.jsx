@@ -1,11 +1,10 @@
 import { createContext, useContext, useReducer, useEffect } from 'react'
 
 const SECS_PER_QUESTION = 30
-
 const QuizContext = createContext()
 
 const initialState = {
-	Questions: [],
+	questions: [], // Changed from Questions to questions (lowercase)
 	status: 'loading',
 	index: 0,
 	answer: null,
@@ -19,7 +18,7 @@ function reducer(state, action) {
 		case 'dataReceived':
 			return {
 				...state,
-				Questions: action.payload,
+				questions: action.payload.questions, // Access the questions array from JSON
 				status: 'ready',
 			}
 		case 'dataFailed':
@@ -31,10 +30,10 @@ function reducer(state, action) {
 			return {
 				...state,
 				status: 'active',
-				secondsRemaining: state.Questions.length * SECS_PER_QUESTION,
+				secondsRemaining: state.questions.length * SECS_PER_QUESTION,
 			}
 		case 'newAnswer': {
-			const question = state.Questions.at(state.index)
+			const question = state.questions.at(state.index)
 			return {
 				...state,
 				answer: action.payload,
@@ -54,7 +53,7 @@ function reducer(state, action) {
 					state.points > state.highscore ? state.points : state.highscore,
 			}
 		case 'restart': {
-			return { ...initialState, Questions: state.Questions, status: 'ready' }
+			return { ...initialState, questions: state.questions, status: 'ready' }
 		}
 		case 'tick':
 			return {
@@ -70,7 +69,7 @@ function reducer(state, action) {
 function QuizProvider({ children }) {
 	const [state, dispatch] = useReducer(reducer, initialState)
 	const {
-		Questions,
+		questions,
 		status,
 		index,
 		answer,
@@ -79,21 +78,22 @@ function QuizProvider({ children }) {
 		secondsRemaining,
 	} = state
 
-	const numQuestions = Questions.length
-	const maxPossiblePoints = Questions.reduce(
+	const numQuestions = questions.length
+	const maxPossiblePoints = questions.reduce(
 		(prev, cur) => prev + cur.points,
 		0
 	)
 
 	useEffect(function () {
-		fetch('http://localhost:3001/Questions')
+		// Changed to fetch from public folder (works in production)
+		fetch('/questions.json')
 			.then((res) => res.json())
 			.then((data) => dispatch({ type: 'dataReceived', payload: data }))
-			.catch((err) => dispatch({ type: 'dataFailed' }))
+			.catch(() => dispatch({ type: 'dataFailed' }))
 	}, [])
 
 	const value = {
-		Questions,
+		questions, // Changed from Questions to questions
 		status,
 		index,
 		answer,

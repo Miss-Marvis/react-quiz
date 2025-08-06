@@ -3,8 +3,8 @@ import Options from './Options'
 import { useQuiz } from '../contexts/QuizContext'
 
 export default function Question() {
-	const { Questions, index } = useQuiz()
-	const question = Questions[index]
+	const { questions, index } = useQuiz()
+	const question = questions[index]
 
 	return (
 		<div>
